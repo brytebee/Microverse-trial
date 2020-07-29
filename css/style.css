@@ -1,6 +1,6 @@
 body {
-  padding:0;
-  background-image: linear-gradient(#929AAB, #F7F7F7, #eeeeee, #393e46);
+    padding: 0;
+    background-image: linear-gradient(#929AAB, #F7F7F7, #eeeeee, #393e46);
 }
 
 #nav-bar {
@@ -9,30 +9,45 @@ body {
     padding-left: 100px;
 }
 
-#navbarNav {
-  padding-left: 500px;
+#nav-bar .navbar-brand {
+    font-size: 2em;
 }
 
-#video, #form {
-  padding:0 10% 5% 10%;
+#nav-bar .navbar-nav .nav-link {
+    font-size: 1.5em;
+}
+
+#navbarNav {
+    padding-left: 500px;
+}
+
+#video,
+#form {
+    padding: 0 10% 5% 10%;
 }
 
 #header-img {
-  padding: 10% 10% 5% 10%;
-  width: 70%;
+    padding: 10% 10% 5% 10%;
+    width: 70%;
 }
 
 .my-sections {
-  display: flex;
-  flex-direction: row;
-  padding:0 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10% 5% 10%;
 }
 
 
 /*Small devices (landscape phones, less than 768px)*/
 
-@media (max-width: 767.98px) {
+@media screen and (min-width:300px) and (max-width: 767.98px) {
     #nav-bar {
         display: block;
+    }
+    #header-img {
+        width: 100%;
+    }
+    .my-sections {
+        flex-direction: column;
     }
 }
